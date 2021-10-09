@@ -48,9 +48,9 @@ def wishMe():
         speak("Good Evening !")
 
     else:
-        speak("Good Night AK47!")
+        speak("Good Night !")
 
-    speak("Jarvis at your Service. Please tell me how can I help You ")
+    speak("AI-Phuong at your Service. Please tell me how can I help You ")
 #wishMe()
 def takeCommand():
 
@@ -99,7 +99,7 @@ if __name__ == "__main__":
 
         elif 'search in chrome' in query:
             speak("what should i search?")
-            chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'Add the Location of the chrome browser
+            chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
 
             r = sr.Recognizer()
 
@@ -116,7 +116,7 @@ if __name__ == "__main__":
         
         elif 'how is the weather' and 'weather' in query:
 
-            url = 'https://api.openweathermap.org/'#Open api link here
+            url = 'https://api.openweathermap.org/'
 
             res = requests.get(url)
 
@@ -165,7 +165,7 @@ if __name__ == "__main__":
                 speak("Sorry my friend . I am not able to send this email")      
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\user account\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"#ADD THE PATH OF THE PROGEM HERE
+            codePath = "C:\\Users\\user account\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
 
 
